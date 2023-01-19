@@ -1,0 +1,61 @@
+spark-submit --master yarn --deploy-mode client \
+--class com.predictionIO.importData.importSearchEventJson \
+--driver-memory 2G \
+--executor-memory 3G \
+--num-executors 5 \
+--conf spark.yarn.executor.memoryOverhead=1000 \
+predictionIO.jar \
+;
+spark-submit --master yarn --deploy-mode client \
+--class com.predictionIO.importData.importReadEventJson \
+--driver-memory 2G \
+--executor-memory 3G \
+--num-executors 5 \
+--conf spark.yarn.executor.memoryOverhead=1000 \
+predictionIO.jar \
+; \
+spark-submit --master yarn --deploy-mode client \
+--class com.predictionIO.importData.importWishlistEventJson \
+--driver-memory 2G \
+--executor-memory 3G \
+--num-executors 5 \
+--conf spark.yarn.executor.memoryOverhead=1000 \
+predictionIO.jar \
+; \
+spark-submit --master yarn --deploy-mode client \
+--class com.predictionIO.importData.importItemPropertiesJson \
+--driver-memory 2G \
+--executor-memory 3G \
+--num-executors 5 \
+--conf spark.yarn.executor.memoryOverhead=1000 \
+predictionIO.jar
+
+pio import --appid 4 --input /home/vgdata/universal/merged_file.json
+
+
+importNormalEvent  importReadEventJson importItemPropertiesJson importRateEventJson importWishlistEventJson
+importSearchEventJson
+
+pio train -- --driver-memory 4g --executor-memory 4g
+
+
+ zip -d predictionIO.jar META-INF/*.RSA META-INF/*.DSA META-INF/*.SF
+
+ jar -tvf predictionIO.jar
+ javap -cp predictionIO.jar com.test.importdata.main
+
+spark-submit --master local --class com.test.importdata.main C:\Users\quang\ScalaProjects\predictionIO\out\artifacts\main_jar\predictionIO.jar
+
+java -cp C:\Users\quang\ScalaProjects\predictionIO\out\artifacts\main_jar\predictionIO.jar
+
+So in spark you have two different components.
+There is the driver and the workers.
+In yarn-cluster mode the driver is running remotely on a data node and the workers are running on separate data nodes.
+In yarn-client mode the driver is on the machine that started the job and the workers are on the data nodes.
+In local mode the driver and workers are on the machine that started the job.
+
+
+
+
+
+

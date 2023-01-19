@@ -1,0 +1,144 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(early(addPluginSbtFile="""C:\Users\quang\AppData\Local\Temp\idea.sbt"""), None, None)
+[debug] > Exec(addPluginSbtFile="""C:\Users\quang\AppData\Local\Temp\idea.sbt""", None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.8.0 (Oracle Corporation Java 1.8.0_45)
+[debug]       Load.loadUnit: plugins took 166.7444ms
+[debug]       Load.loadUnit: defsScala took 0.3821ms
+[debug] [Loading] Scanning directory C:\Users\quang\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\quang\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 25.9658 ms
+[debug]           Load.resolveProject(global-plugins) took 145.6737ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\quang\.sbt\1.0\plugins, plugins: List(<none>))) took 203.5546ms
+[debug] [Loading] Done in C:\Users\quang\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 373.8289ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.391ms
+[debug]     Load.loadUnit(file:/C:/Users/quang/.sbt/1.0/plugins/, ...) took 551.2599ms
+[debug]   Load.apply: load took 1657.4499ms
+[debug]   Load.apply: resolveProjects took 11.3028ms
+[debug]   Load.apply: finalTransforms took 90.5777ms
+[debug]   Load.apply: config.delegates took 8.1422ms
+[debug]   Load.apply: Def.make(settings)... took 1040.7298ms
+[debug]   Load.apply: structureIndex took 113.048ms
+[debug]   Load.apply: mkStreams took 2.227ms
+[info] loading global plugins from C:\Users\quang\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 13252.0112ms
+[debug]           Load.loadUnit: plugins took 26.6929ms
+[debug]           Load.loadUnit: defsScala took 0.0069ms
+[debug] [Loading] Scanning directory C:\Users\quang\ScalaProjects\predictionIO\project
+[debug]             Load.loadUnit: mkEval took 31.0996ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\quang\ScalaProjects\predictionIO\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.859 ms
+[info] loading settings for project predictionio-build from idea.sbt ...
+[debug]               Load.resolveProject(predictionio-build) took 3.0737ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id predictionio-build, base: C:\Users\quang\ScalaProjects\predictionIO\project, plugins: List(<none>))) took 7.5427ms
+[debug] [Loading] Done in C:\Users\quang\ScalaProjects\predictionIO\project, returning: (predictionio-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 721.0805ms
+[debug]           Load.loadUnit: cleanEvalClasses took 94.462ms
+[debug]         Load.loadUnit(file:/C:/Users/quang/ScalaProjects/predictionIO/project/, ...) took 846.1093ms
+[debug]       Load.apply: load took 847.7779ms
+[debug]       Load.apply: resolveProjects took 0.4926ms
+[debug]       Load.apply: finalTransforms took 9.6143ms
+[debug]       Load.apply: config.delegates took 4.7916ms
+[debug]       Load.apply: Def.make(settings)... took 132.7902ms
+[debug]       Load.apply: structureIndex took 28.0424ms
+[debug]       Load.apply: mkStreams took 0.0031ms
+[info] loading project definition from C:\Users\quang\ScalaProjects\predictionIO\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[warn] Unrecognized repository Scala Plugin Bundled Repository, ignoring it
+[warn] Unrecognized repository Scala Plugin Bundled Repository, ignoring it
+[debug]     Load.loadUnit: plugins took 5552.5152ms
+[debug]     Load.loadUnit: defsScala took 0.0025ms
+[debug] [Loading] Scanning directory C:\Users\quang\ScalaProjects\predictionIO
+[debug]       Load.loadUnit: mkEval took 0.5233ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\quang\ScalaProjects\predictionIO, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin)))
+[debug] Clause(And(Set(Atom(sbt.plugins.CorePlugin), Atom(sbt.plugins.JvmPlugin))),Set(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.SemanticdbPlugin,org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin,sbt.plugins.JUnitXmlReportPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 23.6844 ms
+[info] loading settings for project predictionio from build.sbt ...
+[debug]         Load.resolveProject(predictionio) took 71.1788ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id predictionio, base: C:\Users\quang\ScalaProjects\predictionIO, plugins: List(<none>))) took 96.2188ms
+[debug] [Loading] Done in C:\Users\quang\ScalaProjects\predictionIO, returning: (predictionio)
+[debug]     Load.loadUnit: loadedProjectsRaw took 4803.8604ms
+[debug]     Load.loadUnit: cleanEvalClasses took 52.0634ms
+[debug]   Load.loadUnit(file:/C:/Users/quang/ScalaProjects/predictionIO/, ...) took 10410.2056ms
+[debug] Load.apply: load took 10432.5875ms
+[debug] Load.apply: resolveProjects took 0.1271ms
+[debug] Load.apply: finalTransforms took 44.7503ms
+[debug] Load.apply: config.delegates took 0.4801ms
+[debug] Load.apply: Def.make(settings)... took 210.1331ms
+[debug] Load.apply: structureIndex took 49.1562ms
+[debug] Load.apply: mkStreams took 0.0052ms
+[info] set current project to predictionIO (in build file:/C:/Users/quang/ScalaProjects/predictionIO/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(; set ideaPort in Global := 49983 ; idea-shell, None, None)
+[debug] > Exec(set ideaPort in Global := 49983, None, None)
+[info] Defining Global / ideaPort
+[info] The new value will be used by Compile / compile, Test / compile
+[debug] Defining 
+[debug] 	Global / ideaPort
+[debug] 
+[debug] The new value will be used by 
+[debug] 	Compile / compile
+[debug] 	Test / compile
+[info] Reapplying settings...
+[info] set current project to predictionIO (in build file:/C:/Users/quang/ScalaProjects/predictionIO/)
+[debug] > Exec(idea-shell, None, None)

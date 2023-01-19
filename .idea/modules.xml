@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/PycharmProjects/Harness/.idea/Harness.iml" filepath="$USER_HOME$/PycharmProjects/Harness/.idea/Harness.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/recombee/.idea/recombee.iml" filepath="$USER_HOME$/PycharmProjects/recombee/.idea/recombee.iml" />
+    </modules>
+  </component>
+</project>
